@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <style>
+        .box{
+            width: 1920px;
+            height: 1080px;
+            
+        }
+        
+        .signup{
+            width: 670px;
+            height: 960px;
+            border : 1px solid #aacdff;
+            top : 60px;
+            left: 625px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: 25%;
+            box-shadow: 7px 7px 39px 0px #0068FF40 ;
+        }
+
+        .signup2{
+            width: 470px;
+            height: 818px;
+            top : 132px;
+            left: 725px;
+        }
+        #ga{
+            color: blue;
+        }
+        .radio{
+            text-align: center;
+        }
+        .email{
+            width: 466px;
+            height: 80px;
+            top: 286px;
+            left: 725px;
+            border: 1px solid #0068ff;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .name{
+            width: 466px;
+            height: 80px;
+            top: 286px;
+            left: 725px;
+            border: 1px solid #CFCFCF;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .pw{
+            width: 466px;
+            height: 80px;
+            top: 286px;
+            left: 725px;
+            
+            border: 1px solid #CFCFCF;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .button{
+            width: 470px;
+            height: 75px;
+            top: 875px;
+            left: 725px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid #0068ff;
+        }
+        </style>
+<head>
+
+    <title>회원가입</title>
+    <link href="./02-signup.css"rel="stylesheet">
+</head>
+<div class = "box">
+<div class = "signup">
+    <div class = "signup2">
+    <h2 id = "ga" >회원가입을 위해 정보를 입력해 주세요</h2>
+    *이메일 <br>
+    <input class = "email" type="text" ><br><br>
+    *이름 <br>
+    <input class="name" type="text" ><br><br>
+    *비밀번호 <br>
+    <input class="pw" type="password" ><br><br>
+    *비밀번호 확인<br>
+    <input class="pw" type="password" ><br><br>
+    <!-- <select >
+        <option disabled ="true" selected ="true">지역을 선택하세요</option>
+        <option>서울</option>
+        <option>경기</option>
+        <option>인천</option>
+    </select> -->
+    <br><br>
+    <div class ="radio">
+    <input type ="radio" name = "gender">여성
+    <input type ="radio" name = "gender">남성
+    <br><br><br>
+</div>
+    <input type="checkbox"> 이용약관 개인정보 수집 및 동의
+    <br><br><hr><br>
+    <button class = "button">가입하기</button>
+</div>
+    <!-- <input type ="button" value="가입하기"> -->
+    </div>
+</div>
+</body>
+</html>
