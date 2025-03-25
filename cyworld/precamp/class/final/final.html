@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>signUp</title>
+    <link href="./fanal.css" rel="stylesheet">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap__sign">
+        <h3>코드캠프 회원가입</h3>
+        <input class="input__box" placeholder="이메일을 입력해주세요" id="signup__Email">
+        <div class="error" id="error__Email"></div>
+        <input class="input__box" placeholder="이름을 입력해주세요" id="signup__Name">
+        <div class="error" id="error__Name"></div>
+        <input class="input__box" placeholder="비밀번호를 입력해주세요" id="signup__Pw1" type="password">
+        <div class="error" id="error__Pw1"></div>
+        <input class="input__box" placeholder="비밀번호를 입력해주세요" id="signup__Pw2" type="password">
+        <div class="error" id="error__Pw2"></div>
+        <div class="signup__Phone__header">
+            <input class="signup__Phone" id="phone1" oninput="changePhone()" maxlength="3">-
+            <input class="signup__Phone" id="phone2" oninput="changePhone2()"maxlength="4">-
+            <input class="signup__Phone" id="phone3" maxlength="4">
+        </div>
+        <class="signup__Auth__header">
+            <div class="signup__Auth" id = "signup__Auth">000000</div>
+            <button class="auth__Button" onclick="auth__send()">인증번호전송</button><!--온클릭을 통해 js 로 auth__send를 실행-->
+        </div>
+        <div>
+            <div class="signup__Auth__header">
+                <div class="signup__Time" id="signup__Time">3:00</div>
+                <button class="auth__Button2" disabled="true" id="auth__Button2">인증확인</button>
+            </div>
+        </div>
+        <select class="signup__City" id="signup__City">
+            <option disabled="true" selected="true">지역을 선택하세요</option>
+            <option>서울</option>
+            <option>경기</option>
+            <option>인천</option>
+        </select>
+        <div class="error" id="error__City"></div>
+        <div class="gender" id="signup__gender">
+        <input type="radio" name="gender" id="man">남성
+        <input type="radio" name="gender" id="woman">여성
+        </div>
+        <div class="error" id="error__Gender"></div>
+        <button class="complete"  id = "complete" onclick="check()" disabled="true">가입하기</button><!--온클릭을 통해 js 로 check를 실행-->
+    </div>
+    </div>
+</body>
+</html>
